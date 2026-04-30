@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para ti ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="contenedor">
+
+    <div class="carta" id="carta" onclick="abrirCarta()">
+
+        <div class="tapa"></div>
+
+        <div class="contenido">
+
+            <h1>Para ti, mi amor ❤️</h1>
+
+            <div class="texto">
+
+                <p>
+                No sé exactamente en qué momento empezaste a convertirte en alguien tan importante para mí,
+                pero desde que llegaste, todo cambió.
+                </p>
+
+                <p>
+                Hay días en los que todo parece normal… hasta que apareces tú,
+                y sin darte cuenta haces que todo tenga más sentido.
+                </p>
+
+                <p>
+                Me haces reír, me haces pensar, me haces querer ser mejor,
+                y sobre todo… me haces sentir cosas que no sabía que podía sentir.
+                </p>
+
+                <p>
+                No eres solo alguien especial, eres ese lugar al que siempre quiero volver,
+                esa tranquilidad que no sabía que necesitaba,
+                y esa felicidad que ahora no quiero perder.
+                </p>
+
+                <p>
+                No te prometo perfección,
+                pero sí te prometo ganas,
+                tiempo,
+                cariño,
+                y mil intentos más por hacerte feliz.
+                </p>
+
+                <p>
+                Quiero seguir contigo,
+                seguir construyendo momentos,
+                seguir aprendiendo de nosotros,
+                y ver hasta dónde podemos llegar juntos.
+                </p>
+
+            </div>
+
+            <h2 class="pregunta">
+                ¿Te quieres quedar conmigo por mucho tiempo más? 💖
+            </h2>
+
+            <div class="botones">
+                <button class="si" onclick="responder(event, 'si')">Sí, quiero 💕</button>
+                <button class="no" onclick="responder(event, 'no')">No 😢</button>
+            </div>
+
+            <p id="respuesta"></p>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

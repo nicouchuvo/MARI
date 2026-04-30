@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* fondo oscuro elegante */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,105,135,0.2), transparent);
+}
+
+/* contenedor */
+.contenedor {
+    perspective: 1500px;
+}
+
+/* carta */
+.carta {
+    width: 380px;
+    height: 250px;
+    background: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: 1.2s;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+/* abierta */
+.carta.abierta {
+    height: 520px;
+}
+
+/* tapa */
+.tapa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff4d6d, #ff758f);
+    border-radius: 15px;
+    transform-origin: top;
+    transition: 1.2s;
+}
+
+/* animación */
+.carta.abierta .tapa {
+    transform: rotateX(-180deg);
+}
+
+/* contenido */
+.contenido {
+    padding: 25px;
+    text-align: center;
+    opacity: 0;
+    transition: 1.2s;
+}
+
+/* mostrar */
+.carta.abierta .contenido {
+    opacity: 1;
+}
+
+/* título */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 34px;
+    color: #ff4d6d;
+}
+
+/* texto */
+.texto {
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.texto p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* pregunta */
+.pregunta {
+    margin-top: 10px;
+    color: #222;
+}
+
+/* botones */
+.botones {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* sí */
+.si {
+    background: #ff4d6d;
+    color: white;
+}
+
+.si:hover {
+    transform: scale(1.2);
+}
+
+/* no */
+.no {
+    background: #aaa;
+}
+
+/* respuesta */
+#respuesta {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff4d6d;
+}
